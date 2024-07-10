@@ -12,7 +12,8 @@ app.get('/roll/:number', (req, res) => {
         res.send(`<h1>You must specify a number</h1>`)
     }
     else{
-        res.send(`<h1>You rolled a ${number}</h1>`)
+        
+        res.send(`<h1>You rolled a ${Math.floor(Math.random()*number)}</h1>`)
     }
 })
 
